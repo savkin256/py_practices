@@ -1,1 +1,1 @@
-Homework tasks for my Puthon study
+Homework tasks for my Python study
