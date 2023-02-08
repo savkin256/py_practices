@@ -1,3 +1,6 @@
+from math import sqrt
+
+
 class Point:
 
     def __init__(self, x=0, y=0):
@@ -25,6 +28,9 @@ class Point:
     def addy(self, y):
         self.__y += y
 
+    def distance(self, other):
+        return sqrt(((other.__x - self.__x) ** 2) + ((other.__y - self.__y) ** 2))
+
 
 point1 = Point()
 
@@ -33,5 +39,8 @@ print(point1.getx())
 print(point1.gety())
 
 point1.setx(5)
-point1.addy(-2)
+point1.addy(2)
 print(point1.get_point())
+
+point2 = Point(2, -3)
+print(point1.distance(point2))
